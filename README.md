@@ -117,17 +117,11 @@ The agent implements a modular three-phase architecture:
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/reasoning-agent.git
-cd reasoning-agent
+git clone https://github.com/YogeshRajNS/Multi-Step-Reasoning-agent.git
+cd Multi-Step-Reasoning-agent
 ```
 
 ### Step 2: Install Dependencies
-
-```bash
-pip install google-generativeai python-dotenv
-```
-
-Or use the requirements file:
 
 ```bash
 pip install -r requirements.txt
