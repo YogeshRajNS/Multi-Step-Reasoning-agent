@@ -167,9 +167,9 @@ def run_all_tests():
     """Run all test cases and generate a summary report"""
     
     # Check for API key
-    if not os.getenv("GOOGLE_API_KEY"):
-        print("ERROR: GOOGLE_API_KEY environment variable not set.")
-        print("Please set it with: export GOOGLE_API_KEY='your-key-here'")
+    if not os.getenv("GEMINI_API_KEY"):
+        print("ERROR: GEMINI_API_KEY environment variable not set.")
+        print("Please set it with: export GEMINI_API_KEY='your-key-here'")
         print("\nTo get a FREE API key:")
         print("1. Go to https://makersuite.google.com/app/apikey")
         print("2. Click 'Create API Key'")
@@ -245,9 +245,9 @@ def run_single_test(question: str):
     Args:
         question: The question to test
     """
-    if not os.getenv("GOOGLE_API_KEY"):
-        print("ERROR: GOOGLE_API_KEY environment variable not set.")
-        print("Please set it with: export GOOGLE_API_KEY='your-key-here'")
+    if not os.getenv("GEMINI_API_KEY"):
+        print("ERROR: GEMINI_API_KEY environment variable not set.")
+        print("Please set it with: export GEMINI_API_KEY='your-key-here'")
         return
     
     agent = ReasoningAgent()
