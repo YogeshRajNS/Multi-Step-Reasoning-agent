@@ -648,12 +648,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Powered by Google Gemini 2.5 Flash
 - Inspired by research in AI reasoning and verification systems
 
-## 📧 Contact
 
-For questions or feedback, please open an issue on GitHub.
-
----
-
-**Project Status**: ✅ Working (92% test pass rate)
-
-**Last Updated**: December 2025
