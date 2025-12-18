@@ -52,9 +52,9 @@ class ReasoningAgent:
             api_key: Google AI Studio API key (reads from env if not provided)
             max_retries: Maximum number of retry attempts if verification fails
         """
-        self.api_key = api_key or os.getenv("GOOGLE_API_KEY")
+        self.api_key = api_key or os.getenv("GEMINI_API_KEY")
         if not self.api_key:
-            raise ValueError("GOOGLE_API_KEY not found. Please set it as an environment variable.")
+            raise ValueError("GEMINI_API_KEY not found. Please set it as an environment variable.")
         
         genai.configure(api_key=self.api_key)
         self.model = genai.GenerativeModel('models/gemini-2.5-flash')
@@ -388,9 +388,9 @@ def main():
     print()
     
     # Check for API key
-    if not os.getenv("GOOGLE_API_KEY"):
-        print("ERROR: GOOGLE_API_KEY environment variable not set.")
-        print("Please set it with: export GOOGLE_API_KEY='your-key-here'")
+    if not os.getenv("GEMINI_API_KEY"):
+        print("ERROR: GEMINI_API_KEY environment variable not set.")
+        print("Please set it with: export GEMINI_API_KEY='your-key-here'")
         print("\nTo get a FREE API key:")
         print("1. Go to https://makersuite.google.com/app/apikey")
         print("2. Click 'Create API Key'")
