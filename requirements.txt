@@ -9,3 +9,4 @@ python-dotenv>=1.0.0
 # Optional but recommended
 pytest>=7.4.0  # For running tests with pytest instead of built-in test runner
 requests>=2.31.0  # If you want to add HTTP endpoint functionality
+streamlit
