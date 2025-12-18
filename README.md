@@ -132,7 +132,7 @@ pip install -r requirements.txt
 #### Option A: Using Environment Variable
 
 ```bash
-export GOOGLE_API_KEY='your-api-key-here'
+export GEMINI_API_KEY='your-api-key-here'
 ```
 
 #### Option B: Using .env File (Recommended)
@@ -140,7 +140,7 @@ export GOOGLE_API_KEY='your-api-key-here'
 Create a `.env` file in the project root:
 
 ```bash
-GOOGLE_API_KEY=your-api-key-here
+GEMINI_API_KEY=your-api-key-here
 ```
 
 #### Getting a Free API Key
