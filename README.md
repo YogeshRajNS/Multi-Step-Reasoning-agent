@@ -1032,5 +1032,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [Streamlit Documentation](https://docs.streamlit.io/) - Build web apps with Python
 
 ---
-
-**Made with ❤️ using Google Gemini and Streamlit**
