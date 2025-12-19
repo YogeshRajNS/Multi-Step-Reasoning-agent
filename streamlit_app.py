@@ -97,8 +97,8 @@ if 'test_results' not in st.session_state:
 def initialize_agent(api_key: str, max_retries: int = 2):
     """Initialize the reasoning agent with API key"""
     try:
-        #os.environ['GEMINI_API_KEY'] = api_key # uncomment this while running it locally
-        api_key = st.secrets["GEMINI_API_KEY"]#comment this while running locally
+        os.environ['GEMINI_API_KEY'] = api_key # uncomment this while running it locally
+        #api_key = st.secrets["GEMINI_API_KEY"]#comment this while running locally
         agent = ReasoningAgent(api_key=api_key, max_retries=max_retries)
         st.session_state.agent = agent
         return True, "Agent initialized successfully! 🎉"
