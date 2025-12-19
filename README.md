@@ -190,11 +190,9 @@ You can also enter your API key directly in the Streamlit app's sidebar.
 ### 🌐 Web Interface (Streamlit) - **RECOMMENDED**
 
 Launch the interactive web application:
-
-```bash
-
 #os.environ['GEMINI_API_KEY'] = api_key<--- uncomment this line in streamlit_app.py
 api_key = st.secrets["GEMINI_API_KEY"]<---- comment this line in streamlit_app.py
+```bash
 streamlit run streamlit_app.py
 ```
 
